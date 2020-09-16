@@ -10,7 +10,6 @@ class Counter extends React.Component{
   };
 
   handleClick = (counterNum) => {
-    console.log(counterNum)
     this.setState({
       counterNum: this.state.counterNum + 1
     })
