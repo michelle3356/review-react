@@ -2,15 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Counter from './Counter';
-import CounterList from './CounterList';
+import H1Counter from './H1Counter';
+import H2CounterList from './H2CounterList';
+import H3CounterSum from './H3CounterSum';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    <Counter />
-    <CounterList />
+    <H1Counter />
+    <H2CounterList />
+    <H3CounterSum />
   </React.StrictMode>,
   document.getElementById('root')
 );

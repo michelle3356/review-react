@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class CounterList extends React.Component{
+class H2CounterList extends React.Component{
   constructor(){
     super();
     this.state = {
@@ -34,4 +34,4 @@ class CounterList extends React.Component{
   }
 }
 
-export default CounterList;
+export default H2CounterList;

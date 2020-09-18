@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-class Counter extends React.Component{
+class H1Counter extends React.Component{
   constructor(){
     super();
     this.state = {
@@ -20,7 +20,7 @@ class Counter extends React.Component{
     var counterNum = this.state.counterNum;
     return(
       <div>
-        <h1>計數器</h1>
+        <h1>1.計數器</h1>
         <button
         onClick={this.handleClick.bind(this)}>click,than num = {counterNum}</button>
       </div>
@@ -28,4 +28,4 @@ class Counter extends React.Component{
   }
 }
 
-export default Counter;
+export default H1Counter;
