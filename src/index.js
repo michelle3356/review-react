@@ -5,6 +5,7 @@ import App from './App';
 import H1Counter from './H1Counter';
 import H2CounterList from './H2CounterList';
 import H3CounterSum from './H3CounterSum';
+import H4BMI from './H4BMI';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
@@ -13,6 +14,7 @@ ReactDOM.render(
     <H1Counter />
     <H2CounterList />
     <H3CounterSum />
+    <H4BMI />
   </React.StrictMode>,
   document.getElementById('root')
 );
