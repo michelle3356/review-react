@@ -20,8 +20,6 @@ class H4BMI extends React.Component{
   }
 
   handleClick = () => {
-    console.log(this.state.height)
-    console.log(this.state.weight)
     const bmiValue = this.state.weight / ((this.state.height/100)*(this.state.height/100))
     this.setState({
       bmi: bmiValue
