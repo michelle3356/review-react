@@ -9,16 +9,12 @@ import H4BMI from './H4BMI';
 import H5ItemList from './H5ItemList';
 import H6RemoveList from './H6RemoveList';
 import * as serviceWorker from './serviceWorker';
+import HomeRoute from './HomeRoute';
+import Home from './Home';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
-    <H1Counter />
-    <H2CounterList />
-    <H3CounterSum />
-    <H4BMI />
-    <H5ItemList />
-    <H6RemoveList />
+    <Home />
   </React.StrictMode>,
   document.getElementById('root')
 );
