@@ -9,13 +9,14 @@ class H7PersonTable extends React.Component{
   }
   
   handleClick = () => {
+    const that = this;
     fetch('https://randomuser.me/api/?results=25')
     .then(function(res){
       // console.log(res),這裡得到的res是 ReadableStream物件
       return res.json();
     })
     .then(function(data){
-      this.setState({
+      that.setState({
         personData: data.results
       });
     })
