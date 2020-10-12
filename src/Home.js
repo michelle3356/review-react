@@ -18,6 +18,7 @@ class Home extends React.Component{
           <li><Link to="/H6RemoveList">H6RemoveList</Link></li>
           <li><Link to="/H7PersonTable">H7PersonTable</Link></li>
           <li><Link to="/H8ButtonNumSum">H8ButtonNumSum</Link></li>
+          <li><Link to="/H9HappyNewYear">H9HappyNewYear</Link></li>
         </ul>
       </div>
     )
