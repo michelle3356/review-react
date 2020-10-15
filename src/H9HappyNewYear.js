@@ -4,7 +4,8 @@ class H9HappyNewYear extends React.Component{
   constructor(props){
     super(props);
     this.state = {
-      year: 2021,
+      year: 2020,
+      nextYear: 2021,
       remaining: (+new Date("2021/01/01 00:00:00") - +new Date())/1000
     }
   }
@@ -15,9 +16,17 @@ class H9HappyNewYear extends React.Component{
   }
 
   backTime(){
+    var backTimeRem = this.state.nextYear + "/01/01 00:00:00";
     this.setState({
-      remaining: (+new Date("2021/01/01 00:00:00") - +new Date())/1000
+      remaining: (+new Date(backTimeRem) - +new Date())/1000
     })
+    
+    if(new Date().getFullYear() === this.state.year + 1){
+      this.setState({
+        year: this.state.year + 1,
+        nextYear: this.state.nextYear + 1
+      })
+    }
   }
 
   render(){
