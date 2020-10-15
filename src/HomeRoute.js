@@ -15,6 +15,7 @@ import H6RemoveList from './H6RemoveList';
 import H7PersonTable from './H7PersonTable';
 import H8ButtonNumSum from './H8ButtonNumSum';
 import H9HappyNewYear from './H9HappyNewYear';
+import H10CurrencyExchange from './H10CurrencyExchange';
 import * as serviceWorker from './serviceWorker';
 
 
@@ -33,6 +34,7 @@ function HomeRoute (){
           <Route path="/H7PersonTable"><H7PersonTable /></Route>
           <Route path="/H8ButtonNumSum"><H8ButtonNumSum /></Route>
           <Route path="/H9HappyNewYear"><H9HappyNewYear /></Route>
+          <Route path="/H10CurrencyExchange"><H10CurrencyExchange /></Route>
           <Route path="/"><Home /></Route>
         </Switch>
       </BrowserRouter>
