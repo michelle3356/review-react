@@ -1,14 +1,22 @@
 import React from 'react';
 import H10TwdTransUsaInput from './H10TwdTransUsaInput';
 
+function toTWD(USD) {
+  return USD / 30;
+}
 
-function convert(value, unit){
-  console.log('convert',value, unit)
-  if(unit === 'twd'){
-    return value * 30;
-  }else if(unit === 'usa'){
-    return value / 30;
+function toUSD(TWD) {
+  return TWD * 30;
+}
+function convert(value, convert){
+  const input = parseFloat(value);
+  if (Number.isNaN(input)) {
+    return '';
   }
+  const output = convert(input);
+  const rounded = Math.round(output * 1000) / 1000;
+  return rounded.toString();
+  
 }
 class H10TwdTransUsa extends React.Component{
   constructor(props){
@@ -35,8 +43,8 @@ class H10TwdTransUsa extends React.Component{
   render(){
     const number = this.state.number;
     const unit = this.state.unit;
-    const twdNum = unit === 'twd' ? convert(number, 'twd') : number;
-    const usaNum = unit === 'usa' ? convert(number, 'usa') : number;
+    const twdNum = unit === 'twd' ? convert(number, toUSD) : number;
+    const usaNum = unit === 'usa' ? convert(number, toTWD) : number;
     return(
       <div>
         <h1>10.匯率轉換</h1>
