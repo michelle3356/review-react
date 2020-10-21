@@ -35,8 +35,8 @@ class H10TwdTransUsa extends React.Component{
   render(){
     const number = this.state.number;
     const unit = this.state.unit;
-    const twdNum = unit ==='twd' ? convert(number, 'twd') : number;
-    const usaNum = this.state.number;
+    const twdNum = unit === 'twd' ? convert(number, 'twd') : number;
+    const usaNum = unit === 'usa' ? convert(number, 'usa') : number;
     return(
       <div>
         <h1>10.匯率轉換</h1>
