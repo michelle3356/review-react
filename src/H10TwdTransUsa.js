@@ -27,24 +27,26 @@ class H10TwdTransUsa extends React.Component{
     }
   }
 
-  handleTransTWD = (propsNum) => {
-    console.warn(propsNum)
+  handleTransTWD = (propsNum, unit) => {
+    console.warn(propsNum, unit)
     this.setState({
-      number:propsNum
+      number:propsNum,
+      unit
     })
   }
 
-  handleTransUSA = (propsNum) => {
+  handleTransUSA = (propsNum, unit) => {
     this.setState({
-      number: propsNum
+      number: propsNum,
+      unit
     })
   }
 
   render(){
     const number = this.state.number;
     const unit = this.state.unit;
-    const twdNum = unit === 'twd' ? convert(number, toUSD) : number;
-    const usaNum = unit === 'usa' ? convert(number, toTWD) : number;
+    const twdNum = unit === 'twd' ? number: convert(number, toUSD);
+    const usaNum = unit === 'usa' ? number: convert(number, toTWD);
     return(
       <div>
         <h1>10.匯率轉換</h1>

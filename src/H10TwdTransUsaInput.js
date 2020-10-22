@@ -8,7 +8,7 @@ class H10TwdTransUsaInput extends React.Component{
 
 
   handleChange = (e) => {
-    this.props.onTrans(e.target.value)
+    this.props.onTrans(e.target.value, this.props.unit)
   }
   render(){
     const number = this.props.number;
