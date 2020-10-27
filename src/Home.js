@@ -20,6 +20,7 @@ class Home extends React.Component{
           <li><Link to="/H8ButtonNumSum">H8ButtonNumSum</Link></li>
           <li><Link to="/H9HappyNewYear">H9HappyNewYear</Link></li>
           <li><Link to="/H10TwdTransUsa">H10TwdTransUsa</Link></li>
+          <li><Link to="/Hw11ColorPalette">Hw11ColorPalette</Link></li>
         </ul>
       </div>
     )
