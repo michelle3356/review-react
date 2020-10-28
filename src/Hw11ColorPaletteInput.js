@@ -6,24 +6,28 @@ const ColorName = {
   b: 'Blue 藍色'
 }
 
+// 這邊不需要 state
 export default class Hw11ColorPaletteInput extends Component {
-  constructor(props){
-    super(props)
-    this.state={
-      colorValue: 0
-    }
-  };
+  // constructor(props){
+  //   super(props)
+  //   this.state={
+  //     colorValue: 0
+  //   }
+  // };
 
 
   handleChange = (e) => {
-    this.setState({
-      colorValue: e.target.value
-    })
+    // this.setState({
+    //   colorValue: e.target.value
+    // });
+    this.props.onChangeColor(this.props.colorRange, e.target.value);
   }
 
   render() {
-    const colorRange = this.props.colorRange;
-    const colorValue = this.state.colorValue;
+    const {
+      colorRange,
+      colorValue,
+    } = this.props;
     
     return (
       <div>
