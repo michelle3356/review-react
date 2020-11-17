@@ -21,6 +21,7 @@ class Home extends React.Component{
           <li><Link to="/H9HappyNewYear">H9HappyNewYear</Link></li>
           <li><Link to="/H10TwdTransUsa">H10TwdTransUsa</Link></li>
           <li><Link to="/Hw11ColorPalette">Hw11ColorPalette</Link></li>
+          <li><Link to="/ReviewH10DollarTrans">ReviewH10DollarTrans</Link></li>
         </ul>
       </div>
     )

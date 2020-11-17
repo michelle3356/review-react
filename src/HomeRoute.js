@@ -17,6 +17,8 @@ import H8ButtonNumSum from './H8ButtonNumSum';
 import H9HappyNewYear from './H9HappyNewYear';
 import H10TwdTransUsa from './H10TwdTransUsa';
 import Hw11ColorPalette from './Hw11ColorPalette';
+import ReviewH10DollarTrans from './ReviewH10DollarTrans';
+
 import * as serviceWorker from './serviceWorker';
 
 
@@ -37,6 +39,7 @@ function HomeRoute (){
           <Route path="/H9HappyNewYear"><H9HappyNewYear /></Route>
           <Route path="/H10TwdTransUsa"><H10TwdTransUsa /></Route>
           <Route path="/Hw11ColorPalette"><Hw11ColorPalette /></Route>
+          <Route path="/ReviewH10DollarTrans"><ReviewH10DollarTrans /></Route>
           <Route path="/"><Home /></Route>
         </Switch>
       </BrowserRouter>
