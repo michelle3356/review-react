@@ -13,9 +13,9 @@ class ReviewH11ColorInput extends React.Component{
   }
 
   render(){
-    const colorValue = this.props;
-    const colorRange = this.props;
-    // const {colorValue, colorRange} = this.props;
+//     const colorValue = this.props.colorValue;
+//     const colorRange = this.props.colorValue;
+    const {colorValue, colorRange} = this.props;
 
     return(
       <div>
