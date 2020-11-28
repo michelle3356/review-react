@@ -13,7 +13,7 @@ class Home extends React.Component{
           <li><Link to="/H1Counter">H1Counter</Link></li>
           <li><Link to="/H2CounterList">H2CounterList</Link></li>
           <li><Link to="/H3CounterSum">H3CounterSum</Link></li>
-          <li><Link to="/H4BMI">H4BMI</Link></li>
+          <li><Link to="/H4BMICalculate">H4BMICalculate</Link></li>
           <li><Link to="/H5ItemList">H5ItemList</Link></li>
           <li><Link to="/H6RemoveList">H6RemoveList</Link></li>
           <li><Link to="/H7PersonTable">H7PersonTable</Link></li>
@@ -21,6 +21,7 @@ class Home extends React.Component{
           <li><Link to="/H9HappyNewYear">H9HappyNewYear</Link></li>
           <li><Link to="/H10TwdTransUsa">H10TwdTransUsa</Link></li>
           <li><Link to="/Hw11ColorPalette">Hw11ColorPalette</Link></li>
+          <li><Link to="/Hw12Tab">Hw12Tab</Link></li>
           <li><Link to="/ReviewH10DollarTrans">ReviewH10DollarTrans</Link></li>
           <li><Link to="/ReviewH11Color">ReviewH11Color</Link></li>
         </ul>
